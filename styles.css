@@ -1,0 +1,167 @@
+.body1{
+    background: url(/students-g73cac32f8_1920.jpg) no-repeat bottom;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+.p1{
+    font-size: 1.3rem;
+    color: lightsalmon;
+    margin-bottom: 5rem;
+}
+canvas{
+    border: 2px solid black;
+   background-color: white;
+   box-shadow: 5px 5px 20px 5px #888888;}
+.toolbox{
+    background-color: lightsalmon;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    width: 300px;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 8px 0px #4f4e4e;
+}
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+/* game styles */
+
+
+.body2{
+    font-family: 'Press start 2P', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    background: url(/spring-g2ca293560_1280.png) center no-repeat ;
+    color: blue;
+
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+
+}
+.screen.up{
+    margin-top: -100vh;
+}
+.btn{
+    margin-top: 3rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.choose-insect-btn{
+    background-color: transparent;
+    border: 1px solid blue;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+.choose-insect-btn img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.choose-insect-btn:hover{
+    background-color: white;
+    
+}
+
+.insects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.insects-list li{
+    margin: 10px;
+
+}
+
+.game-container{
+    position: relative;
+}
+
+.time, .score{
+    position: absolute;
+    top: 20px;
+}
+
+.time{
+    left: 20px;
+
+}
+.score{
+    right: 20px;
+}
+
+.message{
+    line-height: 1.7;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -450%);
+    transition: transform 0.4s ease-in;
+}
+.message.visible{
+    opacity: 1;
+    transform: translate(-50%, 450%);
+}
+
+.insect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transfrom 0.3  ease-out;
+    cursor: url(/net-gbeacd0df7_1280.png) 10 3, grab;
+}
+.insect.caught{
+    transform: translate(-50%, -50%) scale(0);
+}
+.insect img{
+    width: 100px;
+    height: 100px;
+}

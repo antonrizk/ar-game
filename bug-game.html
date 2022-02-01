@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light justify-content-center bg-dark" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+     
+    <ul class="nav justify-content-center fs-3 ">
+        <li class="nav-item">
+          <a class="nav-link active link-light" aria-current="page" href="index.html">Draw</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="bug-game.html">Bug Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="hoverboard.html">Hoverboard</a>
+        </li>
+       
+      </ul>
+     </nav>
+
+     <div class="body2">
+        <div class="screen">
+           <h1>Catch The Insects</h1>
+           <button class="btn btn-light" id="start-btn">Play Game</button>
+        </div>
+
+        <div class="screen">
+            <h1>Choose Your favorite Bug</h1>
+            <ul class="insects-list">
+                <!-- first bug -->
+                <li>
+                    <button class="choose-insect-btn">
+                        <p>Lady Bug</p>
+                        <img src="/ladybug-gc22324d71_1280.png" alt="ladybug">
+                    </button>
+                </li>
+                <!-- second bug -->
+                <li>
+                   <button class="choose-insect-btn">
+                       <p>Beetle</p>
+                       <img src="/beetle-gff000bd9e_1280.png" alt="beetle">
+                   </button>
+               </li>
+               <!-- third bug -->
+               <li>
+                   <button class="choose-insect-btn">
+                       <p>Bee</p>
+                       <img src="/bee-g6e2903507_1280.png "  alt="bee">
+                   </button>
+               </li>
+            </ul>
+        </div>
+    
+
+    <!-- screen game container -->
+    <div class="screen game-container" id="game-container" >
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <h5 id="message" class="message">
+            Not fast enough! Too many bugs. Refresh game to try again 
+        </h5>
+
+    <!-- <div class="insect">
+        <img src="/ladybug-gc22324d71_1280.png" alt="">
+    </div>         -->
+    </div>
+    
+<!-- end of screen div -->
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
